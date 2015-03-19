@@ -14,5 +14,6 @@
 
 - (bool)containsThisNumber:(int)searchNum numToSearch:(int)numToSearch;
 - (bool)isBuzzed:(int)arg;
+- (bool)fizzCheck:(int)arg;
 
 @end

@@ -18,10 +18,19 @@
     int testNum = 123456;
     
     NSLog(@"isBuzzed for %d is %d", testNum, [self isBuzzed:testNum]);
+    NSLog(@"fizzCheck for %d is %d", testNum, [self fizzCheck:testNum]);
+
     
     testNum = 124567;
     
     NSLog(@"isBuzzed for %d is %d", testNum, [self isBuzzed:testNum]);
+    NSLog(@"fizzCheck for %d is %d", testNum, [self fizzCheck:testNum]);
+    
+    testNum = 123467;
+    
+    NSLog(@"isBuzzed for %d is %d", testNum, [self isBuzzed:testNum]);
+    NSLog(@"fizzCheck for %d is %d", testNum, [self fizzCheck:testNum]);
+    
     return YES;
 }
 
@@ -62,6 +71,26 @@
         return true;
     } else if ([self containsThisNumber:3
                      numToSearch:arg])
+    {
+        
+        //NSLog(@"checkpoint d;");
+        return true;
+    } else
+    {
+        //NSLog(@"checkpoint e;");
+        return false;
+    }
+}
+
+- (bool)fizzCheck:(int)arg;
+{
+    //NSLog(@"checkpoint b; arg is %d", arg);
+    if (arg % 5 == 0)
+    {
+        //NSLog(@"checkpoint c;");
+        return true;
+    } else if ([self containsThisNumber:5
+                            numToSearch:arg])
     {
         
         //NSLog(@"checkpoint d;");
