@@ -15,7 +15,7 @@
     
     // Insert code here
     //NSLog(@"checkpoint a");
-    int testNum = 123456;
+    /*int testNum = 123456;
     
     NSLog(@"isBuzzed for %d is %d", testNum, [self isBuzzed:testNum]);
     NSLog(@"fizzCheck for %d is %d", testNum, [self fizzCheck:testNum]);
@@ -30,6 +30,12 @@
     
     NSLog(@"isBuzzed for %d is %d", testNum, [self isBuzzed:testNum]);
     NSLog(@"fizzCheck for %d is %d", testNum, [self fizzCheck:testNum]);
+    */
+    
+    for (int testNum=1; testNum <= 100; testNum++)
+    {
+        [self checkFizzBuzz:testNum];
+    }
     
     return YES;
 }
@@ -100,6 +106,28 @@
         //NSLog(@"checkpoint e;");
         return false;
     }
+}
+
+- (void)checkFizzBuzz:(int)testNum;
+{
+    bool isBuzzed_flag = [self isBuzzed:testNum];
+    bool isFizzed_flag = [self fizzCheck:testNum];
+    
+    if (isBuzzed_flag && isFizzed_flag)
+    {
+        NSLog(@"%d is fizzbuzzed", testNum);
+    }
+    else if (isBuzzed_flag)
+    {
+        NSLog(@"%d is buzzed", testNum);
+    } else if (isFizzed_flag)
+    {
+        NSLog(@"%d is fizzed", testNum);
+    } else {
+        
+        NSLog(@"%d is neither fizzed nor buzzed", testNum);
+    }
+
 }
 
 @end
