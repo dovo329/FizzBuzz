@@ -14,8 +14,63 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     // Insert code here
+    //NSLog(@"checkpoint a");
+    int testNum = 123456;
     
+    NSLog(@"isBuzzed for %d is %d", testNum, [self isBuzzed:testNum]);
+    
+    testNum = 124567;
+    
+    NSLog(@"isBuzzed for %d is %d", testNum, [self isBuzzed:testNum]);
     return YES;
+}
+
+- (bool)containsThisNumber:(int)searchNum numToSearch:(int)numToSearch;
+{
+    int ax = numToSearch;
+    int rem = 0;
+    NSMutableArray *digits = [[NSMutableArray alloc] init];
+    
+    //NSLog(@"checkpoint f;");
+    while (ax > 0)
+    {
+        rem = ax % 10;
+        NSNumber *nsRem = [NSNumber numberWithInt:rem];
+        
+        [digits addObject:nsRem];
+        ax /= 10;
+    }
+    
+    int i=0;
+    for (NSNumber *digit in digits)
+    {
+        //NSLog(@"digit[%d]==%i", i++, [digit intValue]);
+        if ([digit intValue] == searchNum)
+        {
+            return true;
+        }
+    }
+    return false;
+}
+
+- (bool)isBuzzed:(int)arg;
+{
+    //NSLog(@"checkpoint b; arg is %d", arg);
+    if (arg % 3 == 0)
+    {
+        //NSLog(@"checkpoint c;");
+        return true;
+    } else if ([self containsThisNumber:3
+                     numToSearch:arg])
+    {
+        
+        //NSLog(@"checkpoint d;");
+        return true;
+    } else
+    {
+        //NSLog(@"checkpoint e;");
+        return false;
+    }
 }
 
 @end

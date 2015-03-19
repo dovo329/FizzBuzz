@@ -12,4 +12,7 @@
 
 @property (strong, nonatomic) UIWindow *window;
 
+- (bool)containsThisNumber:(int)searchNum numToSearch:(int)numToSearch;
+- (bool)isBuzzed:(int)arg;
+
 @end
