@@ -14,22 +14,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
+    func isZzed (numToCheck: Int, operand: Int) -> (Bool) {
+        var stringVar : NSString = String(format: "%d", numToCheck)
+        var containsNum : Bool = stringVar.containsString("\(operand)")
+        
+        return (numToCheck % operand == 0 || stringVar.containsString("\(operand)"))
+    }
     
     
     func isBuzzed (arg: Int) -> (Bool) {
-        var stringVar : NSString = String(format: "%d", arg)
-        var containsNum : Bool = stringVar.containsString("3")
-        //println("stringVar = \(stringVar) .containsString(3)=\(containsNum)")
-        
-        return (arg % 3 == 0 || stringVar.containsString("3"))
+        return isZzed(arg, operand: 3)
     }
     
     func isFizzed (arg: Int) -> (Bool) {
-        var stringVar : NSString = String(format: "%d", arg)
-        var containsNum : Bool = stringVar.containsString("5")
-        //println("stringVar = \(stringVar) .containsString(5)=\(containsNum)")
-        
-        return (arg % 5 == 0 || stringVar.containsString("5"))
+        return isZzed(arg, operand: 5)
     }
     
     
