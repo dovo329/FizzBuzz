@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0600"
+   LastUpgradeVersion = "0630"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "7197851019A7DB0C00705362"
+               BlueprintIdentifier = "A55545761ADC5FBE0087E1B4"
                BuildableName = "FizzBuzz-Swift.app"
                BlueprintName = "FizzBuzz-Swift"
                ReferencedContainer = "container:FizzBuzz-Swift.xcodeproj">
@@ -28,7 +28,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "7197851D19A7DB0C00705362"
+               BlueprintIdentifier = "A555458B1ADC5FBF0087E1B4"
                BuildableName = "FizzBuzz-SwiftTests.xctest"
                BlueprintName = "FizzBuzz-SwiftTests"
                ReferencedContainer = "container:FizzBuzz-Swift.xcodeproj">
@@ -46,7 +46,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "7197851D19A7DB0C00705362"
+               BlueprintIdentifier = "A555458B1ADC5FBF0087E1B4"
                BuildableName = "FizzBuzz-SwiftTests.xctest"
                BlueprintName = "FizzBuzz-SwiftTests"
                ReferencedContainer = "container:FizzBuzz-Swift.xcodeproj">
@@ -56,7 +56,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "7197851019A7DB0C00705362"
+            BlueprintIdentifier = "A55545761ADC5FBE0087E1B4"
             BuildableName = "FizzBuzz-Swift.app"
             BlueprintName = "FizzBuzz-Swift"
             ReferencedContainer = "container:FizzBuzz-Swift.xcodeproj">
@@ -72,10 +72,11 @@
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "7197851019A7DB0C00705362"
+            BlueprintIdentifier = "A55545761ADC5FBE0087E1B4"
             BuildableName = "FizzBuzz-Swift.app"
             BlueprintName = "FizzBuzz-Swift"
             ReferencedContainer = "container:FizzBuzz-Swift.xcodeproj">
@@ -90,10 +91,11 @@
       useCustomWorkingDirectory = "NO"
       buildConfiguration = "Release"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "7197851019A7DB0C00705362"
+            BlueprintIdentifier = "A55545761ADC5FBE0087E1B4"
             BuildableName = "FizzBuzz-Swift.app"
             BlueprintName = "FizzBuzz-Swift"
             ReferencedContainer = "container:FizzBuzz-Swift.xcodeproj">
